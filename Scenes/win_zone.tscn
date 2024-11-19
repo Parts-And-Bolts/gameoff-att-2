@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3licdwkh8ye5"]
+
+[ext_resource type="Script" path="res://Scripts/win_zone.gd" id="1_nhwu6"]
+
+[node name="Win-Zone" type="Area2D"]
+script = ExtResource("1_nhwu6")
+
+[connection signal="body_entered" from="." to="." method="_on_golf_ball_entered"]
