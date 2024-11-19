@@ -247,8 +247,8 @@ z_index = 1
 position = Vector2(-29, -3)
 scale = Vector2(0.15, 0.15)
 motion_mode = 1
-raycastDistance = 11
-speed = 150
+raycastDistance = 13
+speed = 100
 
 [node name="Flag" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAAAAAAAGAAoAAAA=")

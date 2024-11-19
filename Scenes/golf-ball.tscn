@@ -1,7 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://xxt7akrbppxn"]
+[gd_scene load_steps=6 format=3 uid="uid://xxt7akrbppxn"]
 
 [ext_resource type="Script" path="res://Scripts/golf-ball.gd" id="1_pwmyo"]
 [ext_resource type="Texture2D" uid="uid://bjr3ew6n0dwns" path="res://Assets/Sprites/golf-ball.png" id="2_peewj"]
+
+[sub_resource type="Gradient" id="Gradient_sqo8k"]
+offsets = PackedFloat32Array(0, 0.556604, 1)
+colors = PackedColorArray(0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1pf47"]
+gradient = SubResource("Gradient_sqo8k")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lma0j"]
 radius = 8.24621
@@ -12,7 +19,9 @@ script = ExtResource("1_pwmyo")
 raycastDistance = 15
 
 [node name="Trail" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+self_modulate = Color(1, 1, 1, 0.556863)
+texture = SubResource("GradientTexture1D_1pf47")
+polygon = PackedVector2Array(-5, -5, 75, -5, 75, 5, -5, 5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -22,10 +31,15 @@ texture = ExtResource("2_peewj")
 shape = SubResource("CircleShape2D_lma0j")
 
 [node name="Vertical" type="RayCast2D" parent="."]
+process_priority = 6
+process_physics_priority = 6
 target_position = Vector2(0, 10)
 collision_mask = 2
-collide_with_areas = true
+hit_from_inside = true
 
 [node name="Horizontal" type="RayCast2D" parent="."]
+process_priority = 6
+process_physics_priority = 6
 target_position = Vector2(12, 0)
 collision_mask = 2
+hit_from_inside = true
