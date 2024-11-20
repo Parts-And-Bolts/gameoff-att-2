@@ -1,7 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://xxt7akrbppxn"]
+[gd_scene load_steps=7 format=3 uid="uid://xxt7akrbppxn"]
 
 [ext_resource type="Script" path="res://Scripts/golf-ball.gd" id="1_pwmyo"]
 [ext_resource type="Texture2D" uid="uid://bjr3ew6n0dwns" path="res://Assets/Sprites/golf-ball.png" id="2_peewj"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_uswf0"]
+friction = 0.0
+bounce = 1.0
 
 [sub_resource type="Gradient" id="Gradient_sqo8k"]
 offsets = PackedFloat32Array(0, 0.556604, 1)
@@ -13,26 +17,34 @@ gradient = SubResource("Gradient_sqo8k")
 [sub_resource type="CircleShape2D" id="CircleShape2D_lma0j"]
 radius = 8.24621
 
-[node name="golf_ball" type="CharacterBody2D"]
-scale = Vector2(0.2, 0.2)
+[node name="golf_ball" type="RigidBody2D"]
+collision_layer = 3
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_uswf0")
+gravity_scale = 0.0
+linear_damp_mode = 1
+angular_damp_mode = 1
 script = ExtResource("1_pwmyo")
 raycastDistance = 15
 
 [node name="Trail" type="Polygon2D" parent="."]
 self_modulate = Color(1, 1, 1, 0.556863)
+scale = Vector2(0.2, 0.2)
 texture = SubResource("GradientTexture1D_1pf47")
-polygon = PackedVector2Array(-5, -5, 75, -5, 75, 5, -5, 5)
+polygon = PackedVector2Array(0, -5, 75, -5, 75, 5, 0, 5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2, 2)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_peewj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.1, 0.1)
 shape = SubResource("CircleShape2D_lma0j")
 
 [node name="Vertical" type="RayCast2D" parent="."]
 process_priority = 6
 process_physics_priority = 6
+scale = Vector2(0.2, 0.2)
 target_position = Vector2(0, 10)
 collision_mask = 2
 hit_from_inside = true
@@ -40,6 +52,7 @@ hit_from_inside = true
 [node name="Horizontal" type="RayCast2D" parent="."]
 process_priority = 6
 process_physics_priority = 6
+scale = Vector2(0.2, 0.2)
 target_position = Vector2(12, 0)
 collision_mask = 2
 hit_from_inside = true

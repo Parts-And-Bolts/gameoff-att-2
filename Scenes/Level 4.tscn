@@ -246,7 +246,6 @@ tile_set = SubResource("TileSet_wogx0")
 z_index = 1
 position = Vector2(-38, 4)
 scale = Vector2(0.15, 0.15)
-motion_mode = 1
 raycastDistance = 13
 speed = 100
 
@@ -260,7 +259,7 @@ remote_path = NodePath("../../Pole")
 
 [node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_imttm")]
 position = Vector2(4, 5)
-NextLevel = "res://Scenes/Level 1.tscn"
+NextLevel = "res://Scenes/Level 5.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone"]

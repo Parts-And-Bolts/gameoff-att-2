@@ -246,7 +246,6 @@ tile_set = SubResource("TileSet_wogx0")
 z_index = 1
 position = Vector2(-33, 13)
 scale = Vector2(0.15, 0.15)
-motion_mode = 1
 raycastDistance = 13
 speed = 100
 
