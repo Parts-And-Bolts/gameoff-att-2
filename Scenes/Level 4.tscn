@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://n18ew8ppar5b"]
+[gd_scene load_steps=10 format=4 uid="uid://bfva0oyl4ykmi"]
 
-[ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_lbmb3"]
-[ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_saxtg"]
-[ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_23isk"]
+[ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_aqowd"]
+[ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_2ql1o"]
+[ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_imttm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
-texture = ExtResource("1_lbmb3")
+texture = ExtResource("1_aqowd")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.91682, -2.78423, 4, -2.96101, 4, -2.2539, -2.03293, -2.2539, -2.03293, 4, -2.91682, 4)
@@ -200,21 +200,6 @@ sources/0 = SubResource("TileSetAtlasSource_2c6hf")
 [sub_resource type="CircleShape2D" id="CircleShape2D_vw1a8"]
 radius = 1.41421
 
-[sub_resource type="Animation" id="Animation_85evo"]
-resource_name = "default"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:skew")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 1),
-"transitions": PackedFloat32Array(0.933033, 1.23114, 1),
-"update": 0,
-"values": [0.0, 0.174533, -0.0872665]
-}
-
 [sub_resource type="Animation" id="Animation_fvift"]
 length = 0.001
 tracks/0/type = "value"
@@ -230,6 +215,21 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_85evo"]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:skew")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(0.933033, 1.23114, 1),
+"update": 0,
+"values": [0.0, 0.174533, -0.0872665]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ra65e"]
 _data = {
 "RESET": SubResource("Animation_fvift"),
@@ -239,27 +239,28 @@ _data = {
 [node name="Node2D" type="Node2D"]
 
 [node name="Maplayout" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD6//3/AAAAAAgAAAD7//3/AAABAAgAAAD8//3/AAABAAgAAAD9//3/AAABAAgAAAD+//3/AAABAAgAAAD///3/AAABAAgAAAAAAP3/AAABAAgAAAABAP3/AAABAAgAAAACAP3/AAABAAgAAAADAP3/AAABAAgAAAAEAP3/AAABAAgAAAAFAP3/AAABAAgAAAD7/wIAAAABAAoAAAD8/wIAAAABAAoAAAD9/wIAAAABAAoAAAD+/wIAAAABAAoAAAD//wIAAAABAAoAAAAAAAIAAAABAAoAAAABAAIAAAABAAoAAAACAAIAAAABAAoAAAADAAIAAAABAAoAAAAEAAIAAAABAAoAAAAFAAIAAAABAAoAAAAGAP7/AAACAAkAAAAGAP//AAACAAkAAAAGAAAAAAACAAkAAAAGAAEAAAACAAkAAAD6//7/AAAAAAkAAAD6////AAAAAAkAAAD6/wAAAAAAAAkAAAD6/wEAAAAAAAkAAAD6/wIAAAAAAAoAAAAGAAIAAAACAAoAAAAGAP3/AAACAAgAAAD//wAAAAAEAAgAAAD/////AAAEAAgAAAD//wEAAAABAAkAAAD7//7/AAABAAkAAAD7////AAABAAkAAAD7/wAAAAABAAkAAAD7/wEAAAABAAkAAAD8//7/AAABAAkAAAD8////AAABAAkAAAD8/wAAAAABAAkAAAD8/wEAAAABAAkAAAD9//7/AAABAAkAAAD9////AAABAAkAAAD9/wAAAAABAAkAAAD9/wEAAAABAAkAAAD+//7/AAABAAkAAAD+////AAABAAkAAAD+/wAAAAABAAkAAAD+/wEAAAABAAkAAAD///7/AAABAAkAAAAAAP7/AAABAAkAAAABAP7/AAABAAkAAAACAP7/AAABAAkAAAADAP7/AAABAAkAAAAEAP7/AAABAAkAAAAFAP7/AAABAAkAAAAFAP//AAABAAkAAAAFAAAAAAABAAkAAAAFAAEAAAABAAkAAAAEAAEAAAABAAkAAAADAAEAAAABAAkAAAACAAEAAAABAAkAAAABAAEAAAABAAkAAAAAAAEAAAABAAgAAAAAAAAAAAABAAkAAAABAAAAAAAEAAgAABACAAAAAAABAAkAAAADAAAAAAABAAkAAAADAP//AAABAAkAAAACAP//AAABAAkAAAABAP//AAAEAAgAABAAAP//AAABAAkAAAAEAP//AAABAAkAAAAEAAAAAAABAAkAAAA=")
+tile_map_data = PackedByteArray("AAADAP//AAACAAAAAAD+////AAABAAAAAAD/////AAABAAAAAAAAAP//AAABAAAAAAABAP//AAABAAAAAAACAP//AAABAAAAAAD+/wEAAAABAAIAAAD//wEAAAABAAIAAAAAAAEAAAABAAIAAAABAAEAAAABAAIAAAACAAEAAAABAAIAAAADAAAAAAACAAEAAAADAAEAAAACAAIAAAD+/wAAAAABAAEAAAD//wAAAAAEAAAAAAAAAAAAAAABAAEAAAABAAAAAAABAAEAAAACAAAAAAABAAEAAAD6////AAAAAAAAAAD7////AAABAAAAAAD8////AAABAAAAAAD9////AAABAAAAAAD9/wEAAAABAAIAAAD8/wEAAAABAAIAAAD7/wEAAAABAAIAAAD6/wEAAAAAAAIAAAD6/wAAAAAAAAEAAAD7/wAAAAABAAEAAAD8/wAAAAABAAEAAAD9/wAAAAABAAEAAAD9//3/AAAKAAAAAAD+//3/AAAMAAAAAAD+//7/AAAMAAIAAAD9//7/AAAKAAIAAAACAAMAAAABAAAAAAADAAMAAAACAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAIAAAACAAQAAAABAAIAAAADAAQAAAACAAIAAAD4/wMAAAAAAAAAAAD4/wQAAAAAAAIAAAD5/wMAAAACAAAAAAD5/wQAAAACAAIAAAACAPz/AAAAAAAAAAACAP3/AAAAAAIAAAADAPz/AAACAAAAAAADAP3/AAACAAIAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAIAAAAHAAEAAAACAAAAAAAHAAIAAAACAAIAAAD3//3/AAAAAAAAAAD3//7/AAAAAAIAAAD4//3/AAACAAAAAAD4//7/AAACAAIAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
-[node name="golf_ball" parent="." instance=ExtResource("2_saxtg")]
+[node name="golf_ball" parent="." instance=ExtResource("2_2ql1o")]
 z_index = 1
-position = Vector2(-29, -3)
+position = Vector2(-38, 4)
 scale = Vector2(0.15, 0.15)
 motion_mode = 1
 raycastDistance = 13
 speed = 100
 
 [node name="Flag" type="TileMapLayer" parent="."]
+position = Vector2(16, 0)
 tile_map_data = PackedByteArray("AAAAAAAAAAAGAAoAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Flag"]
 remote_path = NodePath("../../Pole")
 
-[node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_23isk")]
+[node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_imttm")]
 position = Vector2(4, 5)
-NextLevel = "res://Scenes/prototyping-scene.tscn"
+NextLevel = "res://Scenes/Level 1.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone"]
@@ -272,10 +273,11 @@ libraries = {
 
 [node name="Pole" type="TileMapLayer" parent="."]
 z_index = 1
+position = Vector2(16, 0)
 tile_map_data = PackedByteArray("AAAAAP7/AAANAAcAAAAAAP//AAAFAAkAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(4, 5)
+position = Vector2(-8, 5)
 scale = Vector2(1.55303, 1.44066)
 zoom = Vector2(8, 8)
