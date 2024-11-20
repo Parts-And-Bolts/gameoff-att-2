@@ -287,8 +287,6 @@ collision_enabled = false
 [node name="golf_ball" parent="." instance=ExtResource("2_uoy6i")]
 z_index = 1
 position = Vector2(-38, 4)
-scale = Vector2(0.15, 0.15)
-motion_mode = 1
 raycastDistance = 13
 speed = 100
 

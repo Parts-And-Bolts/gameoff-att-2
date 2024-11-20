@@ -245,7 +245,6 @@ tile_set = SubResource("TileSet_wogx0")
 [node name="golf_ball" parent="." instance=ExtResource("2_eqsay")]
 z_index = 1
 position = Vector2(-33, 13)
-scale = Vector2(0.15, 0.15)
 raycastDistance = 13
 speed = 100
 
