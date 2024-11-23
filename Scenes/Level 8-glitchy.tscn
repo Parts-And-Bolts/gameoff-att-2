@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://cm6b786ojag4c"]
+[gd_scene load_steps=10 format=4 uid="uid://dsjoj5xgjc662"]
 
-[ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_10g5i"]
-[ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_eqsay"]
-[ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_g7yl1"]
+[ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_1k2dt"]
+[ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_t4h80"]
+[ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_3hts7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
-texture = ExtResource("1_10g5i")
+texture = ExtResource("1_1k2dt")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.91682, -2.78423, 4, -2.96101, 4, -2.2539, -2.03293, -2.2539, -2.03293, 4, -2.91682, 4)
@@ -18,8 +18,10 @@ texture_region_size = Vector2i(8, 8)
 4:0/0 = 0
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.03293, -4, 3.09359, -4, 3.0052, 4, 2.03293, 4)
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -3.0494, -2.87262, -4, 4, 3.0494, 2.96101, 4)
 7:0/0 = 0
 8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.22617, -4, 4, -3.31456, -2.87262, 4, -4, 3.13779)
 10:0/0 = 0
 10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.91682, -2.78423, 4, -2.96101, 4, -2.2539, -2.03293, -2.2539, -2.03293, 4, -2.91682, 4)
 11:0/0 = 0
@@ -54,8 +56,10 @@ texture_region_size = Vector2i(8, 8)
 3:2/0 = 0
 4:2/0 = 0
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.22617, -4, 4, -3.31456, -2.87262, 4, -4, 3.13779)
 7:2/0 = 0
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -3.0494, -2.87262, -4, 4, 3.0494, 2.96101, 4)
 10:2/0 = 0
 10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.0052, -4, -3.0052, 2.78423, 4, 2.69584, 4, 2.07713, -1.94454, 1.81196, -2.12132, -4)
 11:2/0 = 0
@@ -239,25 +243,51 @@ _data = {
 [node name="Node2D" type="Node2D"]
 
 [node name="Maplayout" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAADAP3/AAACAAAAAAD6//3/AAAAAAAAAAD6/wIAAAAAAAIAAAADAAIAAAACAAIAAAD7/wIAAAABAAIAAAD8/wIAAAABAAIAAAD9/wIAAAACAAIAAAD9/wAAAAACAAEAAAD9/wEAAAACAAEAAAD6//7/AAAAAAEAAAD6////AAAAAAEAAAD6/wAAAAAAAAEAAAD6/wEAAAAAAAEAAAD7//3/AAABAAAAAAD8//3/AAABAAAAAAD9//3/AAABAAAAAAD+//3/AAABAAAAAAD///3/AAACAAAAAAD///7/AAACAAEAAAD/////AAACAAEAAAD//wAAAAACAAEAAAD//wIAAAABAAIAAAAAAAIAAAABAAIAAAABAAIAAAABAAIAAAACAAIAAAABAAIAAAD+/wIAAAAAAAIAAAD+/wEAAAAAAAEAAAD+/wAAAAAAAAEAAAD9////AAACAAEAAAD+////AAAAAAEAAAD7//7/AAABAAEAAAD7////AAADAAAAAAD7/wAAAAAEAAAAABD7/wEAAAABAAEAAAD8//7/AAABAAEAAAD8////AAADAAAAAAD8/wAAAAAEAAAAAAD8/wEAAAABAAEAAAD9//7/AAADAAEAAAD+//7/AAAEAAEAAAD//wEAAAADAAIAAAAAAAEAAAABAAAAAAABAAEAAAABAAAAAAACAAAAAAAAAAEAAAACAP//AAAAAAEAAAACAP7/AAAAAAEAAAACAP3/AAAAAAAAAAACAAEAAAAEAAIAAAADAAEAAAACAAEAAAADAAAAAAACAAEAAAADAP//AAACAAEAAAADAP7/AAACAAEAAAA=")
+visible = false
+tile_map_data = PackedByteArray("AAD8//7/AAAAAAAAAAD9//7/AAABAAAAAAD+//7/AAABAAAAAAD///7/AAABAAAAAAAAAP7/AAABAAAAAAABAP7/AAABAAAAAAACAP7/AAABAAAAAAADAP7/AAACAAAAAAD8////AAAAAAEAAAD8/wAAAAAAAAEAAAD8/wEAAAAAAAEAAAADAP//AAACAAEAAAADAAAAAAACAAEAAAADAAEAAAACAAEAAAADAAIAAAACAAEAAAD8/wIAAAAAAAEAAAACAAQAAAABAAIAAAABAAQAAAABAAIAAAAAAAQAAAABAAIAAAD//wQAAAABAAIAAAD+/wQAAAABAAIAAAD9/wQAAAABAAIAAAADAAMAAAACAAEAAAD8/wMAAAAAAAEAAAD8/wQAAAAAAAIAAAADAAQAAAACAAIAAAD9/wMAAAADAAIAAAD+/wMAAAABAAAAAAD//wMAAAABAAAAAAAAAAMAAAABAAAAAAABAAMAAAABAAAAAAACAAMAAAAEAAIAAAACAAIAAAAAAAEAAAACAAEAAAAAAAEAAAACAAAAAAAAAAEAAAACAP//AAAEAAEAAAAAAP//AAABAAIAAAD/////AAABAAIAAAD+////AAABAAIAAAD9////AAADAAEAAAABAP//AAABAAIAAAD9/wEAAAABAAEAAAD+/wIAAAABAAIAAAD//wIAAAABAAIAAAAAAAIAAAABAAIAAAD+/wAAAAABAAAAAAD//wAAAAABAAAAAAAAAAAAAAABAAAAAAABAAIAAAACAAIAAAABAAAAAAACAAAAAAD+/wEAAAABAAEAAAD//wEAAAABAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAD9/wAAAAACAAEAAAD9/wIAAAACAAEAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
-[node name="golf_ball" parent="." instance=ExtResource("2_eqsay")]
+[node name="Maplayout5" type="TileMapLayer" parent="."]
+position = Vector2(-25, 12)
+rotation = 1.5708
+tile_map_data = PackedByteArray("AAD8/wEAAAAAAAEAAAADAAEAAAACAAEAAAADAAIAAAACAAEAAAD8/wIAAAAAAAEAAAACAAIAAAAAAAEAAAACAAEAAAAAAAEAAAD9/wEAAAABAAEAAAD+/wIAAAABAAIAAAD//wIAAAABAAIAAAAAAAIAAAABAAIAAAABAAIAAAACAAIAAAD+/wEAAAABAAEAAAD//wEAAAABAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAD9/wIAAAACAAEAAAA=")
+tile_set = SubResource("TileSet_wogx0")
+collision_enabled = false
+
+[node name="Maplayout3" type="TileMapLayer" parent="."]
+position = Vector2(-40, -24)
+tile_map_data = PackedByteArray("AAADAAEAAAACAAEAAAADAAIAAAACAAEAAAACAAQAAAABAAIAAAABAAQAAAABAAIAAAADAAMAAAACAAEAAAADAAQAAAACAAIAAAACAAMAAAAEAAIAAAACAAIAAAAAAAEAAAACAAEAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_wogx0")
+collision_enabled = false
+
+[node name="Maplayout4" type="TileMapLayer" parent="."]
+position = Vector2(9, -25)
+tile_map_data = PackedByteArray("AAADAAEAAAACAAEAAAADAAIAAAACAAEAAAACAAQAAAABAAIAAAABAAQAAAABAAIAAAADAAMAAAACAAEAAAADAAQAAAACAAIAAAACAAMAAAAEAAIAAAACAAIAAAAAAAEAAAACAAEAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_wogx0")
+collision_enabled = false
+
+[node name="Maplayout2" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD///7/AAABAAAAAAAAAP7/AAABAAAAAAABAP7/AAABAAAAAAADAAIAAAACAAEAAAD8/wIAAAAAAAEAAAACAAQAAAABAAIAAAABAAQAAAABAAIAAAAAAAQAAAABAAIAAAD9/wQAAAABAAIAAAADAAMAAAACAAEAAAD8/wMAAAAAAAEAAAD8/wQAAAAAAAIAAAADAAQAAAACAAIAAAD9/wMAAAADAAIAAAAAAAMAAAABAAAAAAABAAMAAAABAAAAAAACAAMAAAAEAAIAAAACAAIAAAAAAAEAAAAAAP//AAABAAIAAAD/////AAABAAIAAAABAP//AAABAAIAAAD+/wIAAAABAAIAAAD//wIAAAABAAIAAAAAAAIAAAABAAIAAAD//wAAAAABAAAAAAAAAAAAAAABAAAAAAABAAIAAAACAAIAAAABAAAAAAACAAAAAAD//wEAAAABAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAD9/wIAAAACAAEAAAA=")
+tile_set = SubResource("TileSet_wogx0")
+collision_enabled = false
+
+[node name="golf_ball" parent="." instance=ExtResource("2_t4h80")]
 z_index = 1
-position = Vector2(-33, 13)
+position = Vector2(-7.62939e-06, 12)
+scale = Vector2(1.02, 1.02)
 speed = 100
 
 [node name="Flag" type="TileMapLayer" parent="."]
-position = Vector2(21, -15)
+position = Vector2(20, 8)
 tile_map_data = PackedByteArray("AAAAAAAAAAAGAAoAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Flag"]
 remote_path = NodePath("../../Pole")
 
-[node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_g7yl1")]
+[node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_3hts7")]
 position = Vector2(4, 5)
-NextLevel = "res://Scenes/Level 6.tscn"
+NextLevel = "res://Scenes/Level 8.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone"]
@@ -270,11 +300,11 @@ libraries = {
 
 [node name="Pole" type="TileMapLayer" parent="."]
 z_index = 1
-position = Vector2(21, -15)
+position = Vector2(20, 8)
 tile_map_data = PackedByteArray("AAAAAP7/AAANAAcAAAAAAP//AAAFAAkAAAA=")
 tile_set = SubResource("TileSet_wogx0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-8, 5)
+position = Vector2(9.53674e-07, 12)
 scale = Vector2(1.55303, 1.44066)
-zoom = Vector2(8, 8)
+zoom = Vector2(10, 10)

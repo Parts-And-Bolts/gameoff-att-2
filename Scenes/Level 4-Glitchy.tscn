@@ -287,7 +287,6 @@ collision_enabled = false
 [node name="golf_ball" parent="." instance=ExtResource("2_uoy6i")]
 z_index = 1
 position = Vector2(-38, 4)
-raycastDistance = 13
 speed = 100
 
 [node name="Flag" type="TileMapLayer" parent="."]

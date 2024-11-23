@@ -247,7 +247,6 @@ tile_set = SubResource("TileSet_wogx0")
 [node name="golf_ball" parent="." instance=ExtResource("2_4r06c")]
 z_index = 1
 position = Vector2(-36, 20)
-raycastDistance = 13
 speed = 100
 
 [node name="Flag" type="TileMapLayer" parent="."]
