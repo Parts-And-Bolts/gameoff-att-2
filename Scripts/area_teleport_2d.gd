@@ -19,7 +19,7 @@ func _ready():
 
 
 func _on_body_entered(body: GolfBall) -> void:
-	print("yo")
+	
 	if isTeleport:
 		
 		var teleport2d: AreaTeleport2D = get_node(teleport2dLinked)

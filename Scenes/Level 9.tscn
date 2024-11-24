@@ -292,7 +292,7 @@ remote_path = NodePath("../../Pole")
 
 [node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_36tnj")]
 position = Vector2(4, 5)
-NextLevel = "res://Scenes/Level 1.tscn"
+NextLevel = "res://Scenes/Level 10.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone"]
