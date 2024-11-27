@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://bfva0oyl4ykmi"]
+[gd_scene load_steps=11 format=4 uid="uid://bfva0oyl4ykmi"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_aqowd"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_2ql1o"]
 [ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_imttm"]
+[ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="3_v2f01"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
 texture = ExtResource("1_aqowd")
@@ -246,6 +247,9 @@ tile_set = SubResource("TileSet_wogx0")
 z_index = 1
 position = Vector2(-38, 4)
 speed = 100
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3_v2f01")]
+LevelName = "Level 4"
 
 [node name="Flag" type="TileMapLayer" parent="."]
 position = Vector2(16, 0)

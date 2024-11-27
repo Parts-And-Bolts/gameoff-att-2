@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdugl3tvuoxur"]
+
+[ext_resource type="FontFile" uid="uid://g7kgfu25oabu" path="res://Assets/Fonts/PixelOperator8.ttf" id="1_3wjrb"]
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_7snxw"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_7snxw")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -99.0
+offset_top = 29.0
+offset_right = 99.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_3wjrb")
+theme_override_font_sizes/font_size = 48
+text = "Level 1"
+horizontal_alignment = 1

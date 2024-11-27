@@ -38,6 +38,7 @@ func _input(event: InputEvent) -> void:
 		LastHold = global_position
 		
 	if event.is_action_released("shoot") and input and get_global_mouse_position().distance_to(LastHold) > 1:
+		$AudioStreamPlayer2D.play()
 		var currentSpeed = clampf(get_global_mouse_position().distance_to(LastHold)*5, 0, speed)
 		linear_velocity = get_global_mouse_position().direction_to(LastHold)*currentSpeed
 		

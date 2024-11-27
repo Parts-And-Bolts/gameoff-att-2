@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://duwq8afc5x5wf"]
+[gd_scene load_steps=12 format=4 uid="uid://duwq8afc5x5wf"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_pcgko"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_4r06c"]
 [ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_atutt"]
+[ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="4_03l64"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
 texture = ExtResource("1_pcgko")
@@ -269,6 +270,9 @@ shape = SubResource("CircleShape2D_vw1a8")
 libraries = {
 "": SubResource("AnimationLibrary_ra65e")
 }
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_03l64")]
+LevelName = "Level 2"
 
 [node name="Pole" type="TileMapLayer" parent="."]
 z_index = 1

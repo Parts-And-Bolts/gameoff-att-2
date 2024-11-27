@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://bjf0o23ypcmff"]
+[gd_scene load_steps=11 format=4 uid="uid://bjf0o23ypcmff"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_ujp3e"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_pxejk"]
+[ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="3_nhf4m"]
 [ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_oiu30"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
@@ -251,6 +252,9 @@ z_index = 1
 position = Vector2(-7.62939e-06, 12)
 scale = Vector2(1.02, 1.02)
 speed = 100
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3_nhf4m")]
+LevelName = "Level 8"
 
 [node name="Flag" type="TileMapLayer" parent="."]
 position = Vector2(20, 8)

@@ -9,6 +9,7 @@ var entered = false
 func _on_golf_ball_entered(body: RigidBody2D) -> void:
 	if !entered:
 		entered = not entered
+		WinSound.play()
 		body.global_position = global_position
 		body.linear_velocity = Vector2.ZERO
 		body.modulate.a = 0

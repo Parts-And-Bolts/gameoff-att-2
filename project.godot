@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="gameoff att 2"
-run/main_scene="res://Scenes/Level 1.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Scenetransition="*res://Scenes/scenetransition.tscn"
+WinSound="*res://Scenes/win_sound.tscn"
 
 [display]
 

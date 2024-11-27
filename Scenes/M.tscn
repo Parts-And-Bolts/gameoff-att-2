@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=4 uid="uid://c6lych2jaa53k"]
+[gd_scene load_steps=17 format=4 uid="uid://c6lych2jaa53k"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_xwofa"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_euoxg"]
 [ext_resource type="PackedScene" uid="uid://dhwylynh2lco" path="res://Scenes/area_teleport_2d.tscn" id="3_1kst4"]
+[ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="3_v8oov"]
 [ext_resource type="Shader" path="res://Shaders/secret-level.gdshader" id="4_kkwqy"]
 [ext_resource type="PackedScene" uid="uid://di4lairyksqq8" path="res://Scenes/camera_area_2d.tscn" id="5_rrybp"]
 [ext_resource type="FontFile" uid="uid://g7kgfu25oabu" path="res://Assets/Fonts/PixelOperator8.ttf" id="6_pbx0s"]
@@ -326,6 +327,9 @@ position = Vector2(-47, 167)
 scale = Vector2(1.55303, 1.44066)
 enabled = false
 zoom = Vector2(8, 8)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3_v8oov")]
+LevelName = "..."
 
 [node name="AreaTeleport2D" parent="." instance=ExtResource("3_1kst4")]
 position = Vector2(20, 5)
