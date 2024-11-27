@@ -285,7 +285,7 @@ offset_bottom = 2.0
 scale = Vector2(0.5, 0.5)
 theme_override_fonts/font = ExtResource("4_ik63n")
 theme_override_font_sizes/font_size = 8
-text = "soul."
+text = "help. me."
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -297,13 +297,13 @@ scale = Vector2(0.2, 0.2)
 theme_override_colors/font_color = Color(0.49, 0.49, 0.49, 1)
 theme_override_fonts/font = ExtResource("4_ik63n")
 theme_override_font_sizes/font_size = 8
-text = "find. me"
+text = "find. me."
 horizontal_alignment = 1
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 z_index = 5
 material = SubResource("ShaderMaterial_5eilo")
-position = Vector2(2, -10)
-polygon = PackedVector2Array(-24, -16, -11, -5, -40, 10, -24, 9, -20, 29, -19, 17, -14, 17, -21, 12, -16, 8, -9, 5, -10, 15, -6, 8, 16, 25, -5, 1, 11, 5, 25, 19, 14, -6, 41, -20, 15, -16, 3, -24, 2, -12, -6, -9)
+position = Vector2(-1, -6)
+polygon = PackedVector2Array(-24, -16, -11, -5, -40, 10, -24, 9, -20, 29, -19, 17, -14, 17, -21, 12, -16, 8, -9, 5, -10, 15, -6, 8, 16, 25, -7, 1, 13, 10, 20, 19, 15, 1, 37, 6, 14, -6, 22, -13, 29, -6, 28, -15, 29, -21, 15, -16, 3, -24, 2, -12, -6, -9)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

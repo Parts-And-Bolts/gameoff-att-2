@@ -28,6 +28,7 @@ angular_damp_mode = 1
 script = ExtResource("1_pwmyo")
 
 [node name="Trail" type="Polygon2D" parent="."]
+visible = false
 self_modulate = Color(1, 1, 1, 0.556863)
 scale = Vector2(0.2, 0.2)
 texture = SubResource("GradientTexture1D_1pf47")
@@ -38,6 +39,7 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_peewj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2(0.1, 0.1)
 shape = SubResource("CircleShape2D_lma0j")
 

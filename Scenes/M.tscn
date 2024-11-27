@@ -467,7 +467,7 @@ text_direction = 1
 
 [node name="Win-Zone" parent="." node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("7_y5606")]
 position = Vector2(-83, 158)
-NextLevel = "res://Scenes/Level 1.tscn"
+NextLevel = "res://Scenes/congrats-glitchy.tscn"
 FlagAnimation = NodePath("../Flag4/AnimationPlayer")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Win-Zone"]

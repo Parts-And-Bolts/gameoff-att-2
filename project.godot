@@ -10,15 +10,16 @@ config_version=5
 
 [application]
 
-config/name="gameoff att 2"
+config/name="TestMePls"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [autoload]
 
 Scenetransition="*res://Scenes/scenetransition.tscn"
 WinSound="*res://Scenes/win_sound.tscn"
+PlayerData="*res://Scripts/playerData.gd"
 
 [display]
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=4 uid="uid://by02o82ru1xcv"]
+[gd_scene load_steps=12 format=4 uid="uid://by02o82ru1xcv"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_3eh3l"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_uoy6i"]
 [ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="3_8nyft"]
 [ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_8o33l"]
+[ext_resource type="Script" path="res://Scripts/win_zone_glitchie.gd" id="5_4akch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c6hf"]
 texture = ExtResource("1_3eh3l")
@@ -303,6 +304,7 @@ remote_path = NodePath("../../Pole")
 
 [node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_8o33l")]
 position = Vector2(4, 5)
+script = ExtResource("5_4akch")
 NextLevel = "res://Scenes/Level 4.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 

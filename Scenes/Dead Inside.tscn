@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=4 uid="uid://dsjoj5xgjc662"]
+[gd_scene load_steps=14 format=4 uid="uid://dsjoj5xgjc662"]
 
 [ext_resource type="Texture2D" uid="uid://cfpk2k2s5spfx" path="res://Assets/Sprites/Golf.png" id="1_1k2dt"]
 [ext_resource type="PackedScene" uid="uid://xxt7akrbppxn" path="res://Scenes/golf-ball.tscn" id="2_t4h80"]
 [ext_resource type="PackedScene" uid="uid://b3licdwkh8ye5" path="res://Scenes/win_zone.tscn" id="3_3hts7"]
+[ext_resource type="Script" path="res://Scripts/win_zone_glitchie.gd" id="4_80rqk"]
 [ext_resource type="Shader" path="res://Shaders/secret-level.gdshader" id="4_iwgop"]
 [ext_resource type="PackedScene" uid="uid://bdugl3tvuoxur" path="res://Scenes/ui.tscn" id="4_k2awf"]
 
@@ -295,6 +296,7 @@ remote_path = NodePath("../../Pole")
 
 [node name="Win-Zone" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_3hts7")]
 position = Vector2(4, 5)
+script = ExtResource("4_80rqk")
 NextLevel = "res://Scenes/Level 8.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
