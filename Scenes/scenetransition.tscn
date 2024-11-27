@@ -57,6 +57,7 @@ _data = {
 }
 
 [node name="Control" type="CanvasLayer"]
+layer = 3
 script = ExtResource("1_fm0i5")
 
 [node name="ColorRect" type="ColorRect" parent="."]

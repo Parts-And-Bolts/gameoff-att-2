@@ -275,7 +275,7 @@ libraries = {
 
 [node name="Win-Zone2" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_u6ifx")]
 position = Vector2(-52, 4)
-NextLevel = "res://Scenes/Level 4-Glitchy.tscn"
+NextLevel = "res://Scenes/Find me.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone2"]
@@ -284,7 +284,7 @@ shape = SubResource("RectangleShape2D_mnp53")
 
 [node name="Win-Zone3" parent="Flag" node_paths=PackedStringArray("FlagAnimation") instance=ExtResource("3_u6ifx")]
 position = Vector2(-19, 3)
-NextLevel = "res://Scenes/Level 4-Glitchy.tscn"
+NextLevel = "res://Scenes/Find me.tscn"
 FlagAnimation = NodePath("../AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Win-Zone3"]
